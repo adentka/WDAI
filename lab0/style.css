@@ -1,0 +1,116 @@
+
+/* Import czcionki */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap');
+
+/* --- Style ogólne i nagłówki --- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 30px;
+    color: #2c3e50;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 500;
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #7f8c8d;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.back-link:hover {
+    color: #2c3e50;
+}
+
+/* --- Strona główna (index.html) --- */
+ol {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.link-cw1 { color: #d9534f; text-decoration: none; font-weight: bold; }
+.link-cw2 { color: #2e6da4; text-decoration: none; font-weight: bold; }
+.link-cw3 { color: #27ae60; text-decoration: none; font-weight: bold; }
+
+/* --- Ćwiczenie 1: Artykuł --- */
+.article-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.author {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.35rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #d35400;
+    margin-bottom: 25px;
+}
+
+.article-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* --- Ćwiczenie 2: Tabela --- */
+table {
+    border-collapse: collapse; /* kluczowe z treści zadania */
+    width: 70%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+th {
+    background-color: #f7d560;
+}
+
+tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* --- Ćwiczenie 3: Kwadraty --- */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.box-1 { background-color: #e74c3c; }
+.box-2 { background-color: #3498db; }
+.box-3 { background-color: #f39c12; }
+.box-4 { background-color: #9b59b6; }
+
+.box-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+}
