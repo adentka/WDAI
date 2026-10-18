@@ -1,2 +1,2 @@
 # WDAI
-#zadania z labów + projekt
+zadania z labów + projekt
