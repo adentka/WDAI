@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt i Rezerwacje | Błękitny Horyzont</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">Błękitny <span>Horyzont</span></a>
+      <nav aria-label="Nawigacja główna">
+        <ul>
+          <li><a href="index.html">Start i Oferta</a></li>
+          <li><a href="historia.html">Moja Historia</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="kontakt.html" class="active">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="section-header">
+      <h2>Skontaktuj się i zaplanuj rejs</h2>
+      <p>Masz pytania dotyczące terminów, wolnych koi lub kursu na patent? Napisz wiadomość.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="form-box">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="senderName">Imię i nazwisko *</label>
+            <input type="text" id="senderName" name="senderName" placeholder="np. Jan Kowalski" required minlength="3">
+          </div>
+
+          <div class="form-group">
+            <label for="senderEmail">Adres e-mail *</label>
+            <input type="email" id="senderEmail" name="senderEmail" placeholder="jan.kowalski@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="topic">Temat zapytania *</label>
+            <select id="topic" name="topic" required>
+              <option value="" disabled selected>-- Wybierz temat rozmowy --</option>
+              <option value="rejs-morski">Rezerwacja rejsu śródziemnomorskiego</option>
+              <option value="rejs-jeziora">Rejs turystyczny po jeziorach (Mazury / Jeziorak)</option>
+              <option value="kurs-patent">Kurs na patent żeglarza jachtowego</option>
+              <option value="wspolpraca">Inne pytanie / czarter indywidualny</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Treść wiadomości *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Napisz, jaki termin Cię interesuje oraz czy masz już doświadczenie żeglarskie..." required minlength="15"></textarea>
+          </div>
+
+          <button type="submit" class="btn">Wyślij wiadomość</button>
+          <div id="formFeedback" class="form-feedback" role="alert"></div>
+        </form>
+      </div>
+
+      <aside class="calc-box">
+        <h3>Kalkulator kosztu załogi</h3>
+        <p style="margin-bottom: 1.25rem; font-size: 0.92rem; color: var(--text-muted);">
+          Sprawdź szacunkowy koszt wyjazdu dla większej grupy lub całej kabiny.
+        </p>
+
+        <div class="form-group">
+          <label for="cruiseType">Wybierz wariant z oferty:</label>
+          <select id="cruiseType">
+            <option value="2450">Rejs Śródziemnomorski – Chorwacja (2 450 PLN / os.)</option>
+            <option value="2790">Rejs Śródziemnomorski – Grecja (2 790 PLN / os.)</option>
+            <option value="1350">Rejs po Wielkich Jeziorach Mazurskich (1 350 PLN / os.)</option>
+            <option value="690">Weekend pod żaglami na Jezioraku (690 PLN / os.)</option>
+            <option value="1690">Kurs na Patent Żeglarza Jachtowego (1 690 PLN / os.)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="peopleCount">Liczba uczestników (1–8 osób):</label>
+          <input type="number" id="peopleCount" value="2" min="1" max="8">
+        </div>
+
+        <div style="background: var(--navy-primary); color: var(--beige-bg); padding: 1.25rem; border-radius: 8px; margin-top: 1.5rem;">
+          <p style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--beige-card);">Szacunkowa kwota łączna:</p>
+          <p id="totalPrice" style="font-size: 1.85rem; font-family: 'JetBrains Mono', serif; font-weight: 700; color: var(--gold-accent);">4 900 PLN</p>
+          <p id="discountInfo" style="font-size: 0.82rem; color: var(--beige-card); margin-top: 0.25rem;">Dla grup od 4 osób przysługuje 5% rabatu załogowego.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 <span>Alicja Denkiewicz</span> – Błękitny Horyzont. Wszystkie prawa zastrzeżone.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--dziala na telefonie laptopie itp-->
+  <title>Galeria Żeglarska | Błękitny Horyzont</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">Błękitny <span>Horyzont</span></a>
+      <nav aria-label="Nawigacja główna">
+        <ul>
+          <li><a href="index.html">Start i Oferta</a></li>
+          <li><a href="historia.html">Moja Historia</a></li>
+          <li><a href="galeria.html" class="active">Galeria</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="section-header">
+        <h2>Kadry z rejsów i szkoleń</h2>
+        <p>Wybierz kategorię, aby przefiltrować zdjęcia z wypraw morskich i mazurskich.</p>
+      </div>
+
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">Wszystkie zdjęcia</button>
+        <button class="filter-btn" data-filter="morze">Morze Śródziemne</button>
+        <button class="filter-btn" data-filter="jeziora">Jeziora i Mazury</button>
+        <button class="filter-btn" data-filter="detale">Wspomnienia z załogą</button>
+      </div>
+
+      <div class="gallery-grid">
+
+        <figure class="gallery-item" data-category="morze">
+          <img src="morze1.jpg"
+               alt="Statek Borchardt przy zachodzie słońca">
+          <figcaption>Poranny przelot między wyspami.</figcaption>
+        </figure>
+
+     
+        <figure class="gallery-item" data-category="morze">
+          <img src="morze2.jpg"
+               alt="Zachód słońca na morzu">
+          <figcaption>Zachód słońca na morzu.</figcaption>
+        </figure>
+
+                <figure class="gallery-item" data-category="morze">
+          <img src="morze3.jpg"
+               alt="Łódki na morzu">
+          <figcaption>Tall Ships - wyścigi po morzu.</figcaption>
+        </figure>
+
+
+        <figure class="gallery-item" data-category="detale">
+          <img src="zaloga1.jpg"
+               alt="5 osób siedzących na skrzyni na łódce">
+          <figcaption>Leczenie choroby morskiej.</figcaption>
+        </figure>
+
+
+        <figure class="gallery-item" data-category="jeziora">
+          <img src="cztery.jpg"
+               alt="spokojne popołudnie na łódce">
+          <figcaption>Mazurki</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="jeziora">
+          <img src="piec.jpg"
+               alt="Port mazurski przy zachmurzonym niebie">
+          <figcaption>Port Mazurski.</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="detale">
+          <img src="zaloga2.jpg"
+               alt="Bosman dociąga łódkę do keji">
+          <figcaption>Dobijanie do portu.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 <span>Alicja Denkiewicz</span> – Błękitny Horyzont. Wszystkie prawa zastrzeżone.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
